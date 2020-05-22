@@ -5,8 +5,8 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 repositories {
@@ -32,10 +32,11 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.12")
     testAnnotationProcessor("org.projectlombok:lombok:1.18.12")
 
-    implementation("com.amazonaws:aws-lambda-java-core:1.2.0")
-    implementation("com.amazonaws:aws-java-sdk-secretsmanager:1.11.688")
+    implementation("com.amazonaws:aws-lambda-java-core:1.2.1")
+    implementation("com.amazonaws:aws-lambda-java-events:3.0.0")
+    implementation("com.amazonaws:aws-java-sdk-secretsmanager:1.11.786")
 
-    implementation("com.amazonaws:aws-lambda-java-log4j2:1.1.1")
+    implementation("com.amazonaws:aws-lambda-java-log4j2:1.2.0")
     implementation("org.apache.logging.log4j:log4j-core:2.8.2")
     implementation("org.apache.logging.log4j:log4j-api:2.8.2")
 
