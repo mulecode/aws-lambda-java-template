@@ -1,12 +1,10 @@
 # Idea
-.idea
-build
+out/
+.idea/
 
-# gradle grapper
-gradle
-.gradle
-gradlew
-gradlew.bat
+# Gradle
+.gradle/
+build/
 
 # Compiled class file
 *.class

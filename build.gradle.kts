@@ -46,3 +46,8 @@ dependencies {
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.0")
     implementation("com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.11.0")
 }
+
+tasks.wrapper {
+    gradleVersion = "6.7"
+    distributionType = Wrapper.DistributionType.ALL
+}
